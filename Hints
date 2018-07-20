@@ -1,0 +1,5 @@
+Hints
+1.) To Change Prop value in File using sed command
+Filecontent.prop
+Contracts-ContractData=True
+sed -i -e s/^Contracts-ContractData=.*$/Contracts-ContractData=False/g  Filecontent.prop
