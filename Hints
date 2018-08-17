@@ -3,3 +3,5 @@ Hints
 Filecontent.prop
 Contracts-ContractData=True
 sed -i -e s/^Contracts-ContractData=.*$/Contracts-ContractData=False/g  Filecontent.prop
+2.) starting Jenkins
+nohup $java_Home -DJENKINS_HOME=$jen_dir -jar -Djava.awt.headless=true -Xms1G -Xmx3G -XX:PermSize=1G -XX:MaxPermSize=2G $jen_dir/jenkins.war  --logfile=$jen_dir/jenkins.log --httpPort=18969 &
